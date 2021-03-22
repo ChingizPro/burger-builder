@@ -1,14 +1,14 @@
-// import './index.css';
+import Layout from './Components/Layout/Layout';
+import './index.css';
 
 function App() {
   return (
-    <div className="App">
-      <p>hi there lorem ispsum  dolor sit amet consectetur adipicising amet</p>
-      <p>hi there lorem ispsum  dolor sit amet consectetur adipicising amet</p>
-      <p>hi there lorem ispsum  dolor sit amet consectetur adipicising amet</p>
-      <p>hi there lorem ispsum  dolor sit amet consectetur adipicising amet</p>
-      <p>hi there lorem ispsum  dolor sit amet consectetur adipicising amet</p>
-      <p><b>hi there lorem ispsum  dolor sit amet consectetur adipicising amet</b></p>
+    <div>
+      <Layout>
+        <div>Child Component 1</div>
+        <div><strong><em>Child Component 2</em></strong></div>
+        <div>Child Component 3</div>
+      </Layout>
     </div>
   );
 }
