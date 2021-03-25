@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/burger-builder/static/css/main.ed41839b.chunk.css",
-    "main.js": "/burger-builder/static/js/main.e63c2cff.chunk.js",
-    "main.js.map": "/burger-builder/static/js/main.e63c2cff.chunk.js.map",
-    "runtime-main.js": "/burger-builder/static/js/runtime-main.7682caa5.js",
-    "runtime-main.js.map": "/burger-builder/static/js/runtime-main.7682caa5.js.map",
-    "static/js/2.66ccf36a.chunk.js": "/burger-builder/static/js/2.66ccf36a.chunk.js",
-    "static/js/2.66ccf36a.chunk.js.map": "/burger-builder/static/js/2.66ccf36a.chunk.js.map",
-    "static/js/3.9f35e0bc.chunk.js": "/burger-builder/static/js/3.9f35e0bc.chunk.js",
-    "static/js/3.9f35e0bc.chunk.js.map": "/burger-builder/static/js/3.9f35e0bc.chunk.js.map",
+    "main.css": "/burger-builder/static/css/main.aed1da9b.chunk.css",
+    "main.js": "/burger-builder/static/js/main.3aee2ce8.chunk.js",
+    "main.js.map": "/burger-builder/static/js/main.3aee2ce8.chunk.js.map",
+    "runtime-main.js": "/burger-builder/static/js/runtime-main.8f8f7e16.js",
+    "runtime-main.js.map": "/burger-builder/static/js/runtime-main.8f8f7e16.js.map",
+    "static/js/2.8e68a52b.chunk.js": "/burger-builder/static/js/2.8e68a52b.chunk.js",
+    "static/js/2.8e68a52b.chunk.js.map": "/burger-builder/static/js/2.8e68a52b.chunk.js.map",
+    "static/js/3.c77cd3ec.chunk.js": "/burger-builder/static/js/3.c77cd3ec.chunk.js",
+    "static/js/3.c77cd3ec.chunk.js.map": "/burger-builder/static/js/3.c77cd3ec.chunk.js.map",
     "index.html": "/burger-builder/index.html",
-    "static/css/main.ed41839b.chunk.css.map": "/burger-builder/static/css/main.ed41839b.chunk.css.map",
-    "static/js/2.66ccf36a.chunk.js.LICENSE.txt": "/burger-builder/static/js/2.66ccf36a.chunk.js.LICENSE.txt",
+    "static/css/main.aed1da9b.chunk.css.map": "/burger-builder/static/css/main.aed1da9b.chunk.css.map",
+    "static/js/2.8e68a52b.chunk.js.LICENSE.txt": "/burger-builder/static/js/2.8e68a52b.chunk.js.LICENSE.txt",
     "static/media/index.css": "/burger-builder/static/media/open-sans-v18-latin-regular.f57a62e9.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.7682caa5.js",
-    "static/js/2.66ccf36a.chunk.js",
-    "static/css/main.ed41839b.chunk.css",
-    "static/js/main.e63c2cff.chunk.js"
+    "static/js/runtime-main.8f8f7e16.js",
+    "static/js/2.8e68a52b.chunk.js",
+    "static/css/main.aed1da9b.chunk.css",
+    "static/js/main.3aee2ce8.chunk.js"
   ]
 }
