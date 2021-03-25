@@ -3,15 +3,17 @@ import React from 'react';
 import BurgerIngredient from './BurgerIngredient/BurgerIngredient';
 import classes from './Burger.module.css';
 
-const Burger = props => (
-    <div className={classes.Burger}>
-        <BurgerIngredient type='bread-top' />
-        <BurgerIngredient type='salad' />
-        <BurgerIngredient type='bacon' />
-        <BurgerIngredient type='cheese' />
-        <BurgerIngredient type='meat' />
-        <BurgerIngredient type='bread-bottom' />
-    </div>
-);
+const Burger = props => {
+    const transformedIngredients = Object.keys(props.ingredients).map(igKey => {
+        return [...Array(props.ingredients[igKey])];
+    });
+    console.log(transformedIngredients);
+
+    return (
+        <div className={classes.Burger}>
+
+        </div>
+    );
+}
 
 export default Burger;
