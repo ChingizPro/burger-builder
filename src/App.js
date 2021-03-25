@@ -1,13 +1,12 @@
 import Layout from './Components/Layout/Layout';
+import BurgerBuilder from './Containers/BurgerBuilder/BurgerBuilder';
 import './index.css';
 
 function App() {
   return (
     <div>
       <Layout>
-        <div>Child Component 1</div>
-        <div><strong><em>Child Component 2</em></strong></div>
-        <div>Child Component 3</div>
+        <BurgerBuilder />
       </Layout>
     </div>
   );

@@ -1,4 +1,5 @@
 import Wrapper from '../../hoc/Wrapper/Wrapper'
+import classes from './Layout.module.css';
 
 const Layout = (props) => {
     return (
@@ -6,7 +7,10 @@ const Layout = (props) => {
             [Nav]
             [Toolbar]
             [Backdrop]
-            {props.children}
+            
+            <main className={classes.content}>
+                {props.children}
+            </main>
         </Wrapper>
     )
 }
