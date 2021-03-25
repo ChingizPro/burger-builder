@@ -6,7 +6,7 @@ import classes from './BurgerIngredient.module.css';
 const BurgerIngredient = props => {
     let ingredient = null;
 
-    switch (ingredient) {
+    switch (props.type) {
         case ('bread-bottom'):
             ingredient = <div className={classes.BreadBottom}></div>;
             break;
