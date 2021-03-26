@@ -12,6 +12,9 @@ const Burger = props => {
 
     transformedIngredients = transformedIngredients.reduce((arr, el) => arr.concat(el), []);
 
+    if (transformedIngredients.length === 0) transformedIngredients = <p className={classes['Burger-text']
+    }> Please start adding ingredients!</p >
+
     return (
         <div className={classes.Burger}>
             <BurgerIngredient type='bread-top' />
