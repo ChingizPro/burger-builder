@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Wrapper from '../../hoc/Wrapper/Wrapper';
 import Burger from '../../Components/Burger/Burger';
+import BuildControls from '../../Components/Burger/BuildControls/BuildControls';
 
 class BurgerBuilder extends Component {
     // ! another approach
@@ -24,7 +25,7 @@ class BurgerBuilder extends Component {
         return (
             <Wrapper>
                 <Burger ingredients={this.state.ingredients} />
-                <div>Build Controls</div>
+                <BuildControls />
             </Wrapper>
         );
     }
