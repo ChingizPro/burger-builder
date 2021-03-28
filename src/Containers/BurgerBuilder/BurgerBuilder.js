@@ -29,9 +29,22 @@ class BurgerBuilder extends Component {
         let clonedIngredients = { ...this.state.ingredients };
         clonedIngredients[type] = newCount;
 
-        let oldPrice = this.state.totalPrice;
+        let currentPrice = this.state.totalPrice;
         let priceAddition = INGREDIENT_PRICES[type];
-        let newPrice = oldPrice + priceAddition;
+        let newPrice = currentPrice + priceAddition;
+
+        this.setState({ ingredients: clonedIngredients, totalPrice: newPrice });
+    }
+
+    removeIngredientHandler = (type) => {
+        let oldCount = this.state.ingredients[type];
+        let newCount = --oldCount;
+        let clonedIngredients = { ...this.state.ingredients };
+        clonedIngredients[type] = newCount;
+
+        let currentPrice = this.state.totalPrice;
+        let priceDeduction = INGREDIENT_PRICES[type];
+        let newPrice = currentPrice - priceDeduction;
 
         this.setState({ ingredients: clonedIngredients, totalPrice: newPrice });
     }
@@ -40,7 +53,7 @@ class BurgerBuilder extends Component {
         return (
             <Wrapper>
                 <Burger ingredients={this.state.ingredients} />
-                <BuildControls added={this.addIngredientHandler} price={this.state.totalPrice.toFixed(2)} />
+                <BuildControls added={this.addIngredientHandler} removed={this.removeIngredientHandler} price={this.state.totalPrice.toFixed(2)} />
             </Wrapper>
         );
     }

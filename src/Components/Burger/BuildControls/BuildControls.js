@@ -17,7 +17,7 @@ const BuildControls = (props) => (
             <span> $</span>
         </div>
         {controls.map(control => {
-            return <BuildControl key={control.label} label={control.label} added={() => props.added(control.type)} />
+            return <BuildControl key={control.label} label={control.label} added={() => props.added(control.type)} removed={() => props.removed(control.type)} />
         })}
     </div>
 );
