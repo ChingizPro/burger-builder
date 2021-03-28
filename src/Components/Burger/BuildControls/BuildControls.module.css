@@ -8,3 +8,10 @@
     margin: auto;
     padding: 10px 0;
 }
+
+.Price {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px 30px;
+}
