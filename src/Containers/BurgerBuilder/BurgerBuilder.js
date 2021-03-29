@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import Wrapper from '../../hoc/Wrapper/Wrapper';
 import Burger from '../../Components/Burger/Burger';
 import BuildControls from '../../Components/Burger/BuildControls/BuildControls';
-import classes from './BurgerBuilder.module.css';
 
 const INGREDIENT_PRICES = {
     salad: 0.4,
@@ -50,10 +49,15 @@ class BurgerBuilder extends Component {
     }
 
     render() {
+        const disabledInfo = { ...this.state.ingredients };
+        for (let i in disabledInfo) {
+            disabledInfo[i] = disabledInfo[i] <= 0;
+        }
+
         return (
             <Wrapper>
                 <Burger ingredients={this.state.ingredients} />
-                <BuildControls added={this.addIngredientHandler} removed={this.removeIngredientHandler} price={this.state.totalPrice.toFixed(2)} />
+                <BuildControls added={this.addIngredientHandler} removed={this.removeIngredientHandler} price={this.state.totalPrice.toFixed(2)} disabled={disabledInfo} />
             </Wrapper>
         );
     }
