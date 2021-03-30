@@ -22,6 +22,7 @@ const BuildControls = (props) => (
         {controls.map(control => {
             return <BuildControl key={control.label} label={control.label} added={() => props.added(control.type)} removed={() => props.removed(control.type)} disabled={props.disabled[control.type]} />
         })}
+        <button className={classes.OrderButton} disabled={!props.purchasable}>Order Now</button>
     </div>
 );
 
