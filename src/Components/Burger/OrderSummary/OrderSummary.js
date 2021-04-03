@@ -3,7 +3,7 @@ import React from 'react';
 import Wrapper from '../../../hoc/Wrapper/Wrapper';
 
 const OrderSummary = (props) => {
-    const summary = Object.keys(props.ingredients).map(igKey => <li><span style={{ textTransform: 'capitalize' }}>{igKey}</span>: {props.ingredients[igKey]}</li>);
+    const summary = Object.keys(props.ingredients).map(igKey => <li key={igKey}><span style={{ textTransform: 'capitalize' }}>{igKey}</span>: {props.ingredients[igKey]}</li>);
 
     return (
         <Wrapper>
