@@ -6,7 +6,7 @@ import classes from './Modal.module.css';
 
 const Modal = (props) => (
     <Wrapper>
-        {props.showModal ? <Backdrop click={props.hideModal} /> : null}
+        <Backdrop visible={props.showModal} click={props.hideModal} />
         <div className={classes.Modal} style={{ transform: props.showModal ? 'translateY(0vh)' : 'translateY(-100vh)' }}>
             {props.children}
         </div>
