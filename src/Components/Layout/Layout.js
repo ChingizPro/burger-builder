@@ -6,7 +6,6 @@ const Layout = (props) => {
         <Wrapper>
             [Nav]
             [Toolbar]
-            [Backdrop]
             
             <main className={classes.content}>
                 {props.children}

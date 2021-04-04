@@ -64,6 +64,10 @@ class BurgerBuilder extends Component {
         this.setState({ modalVisible: true });
     }
 
+    hideModal = () => {
+        this.setState({ modalVisible: false });
+    }
+
     render() {
         const disabledInfo = { ...this.state.ingredients };
         for (let i in disabledInfo) {
@@ -72,7 +76,7 @@ class BurgerBuilder extends Component {
 
         return (
             <Wrapper>
-                <Modal showModal={this.state.modalVisible}>
+                <Modal showModal={this.state.modalVisible} hideModal={this.hideModal}>
                     <OrderSummary ingredients={this.state.ingredients} />
                 </Modal>
                 <Burger ingredients={this.state.ingredients} />
