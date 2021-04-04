@@ -22,7 +22,8 @@ class BurgerBuilder extends Component {
             bacon: 0
         },
         totalPrice: 1,
-        purchasable: false
+        purchasable: false,
+        modalVisible: false
     }
 
     addIngredientHandler = (type) => {
@@ -59,6 +60,10 @@ class BurgerBuilder extends Component {
         this.setState({ purchasable: ingredientSum > 0 });
     }
 
+    modalController = () => {
+        this.setState({ modalVisible: true });
+    }
+
     render() {
         const disabledInfo = { ...this.state.ingredients };
         for (let i in disabledInfo) {
@@ -67,11 +72,11 @@ class BurgerBuilder extends Component {
 
         return (
             <Wrapper>
-                <Modal>
+                <Modal showModal={this.state.modalVisible}>
                     <OrderSummary ingredients={this.state.ingredients} />
                 </Modal>
                 <Burger ingredients={this.state.ingredients} />
-                <BuildControls added={this.addIngredientHandler} removed={this.removeIngredientHandler} price={this.state.totalPrice.toFixed(2)} disabled={disabledInfo} purchasable={this.state.purchasable} />
+                <BuildControls added={this.addIngredientHandler} removed={this.removeIngredientHandler} price={this.state.totalPrice.toFixed(2)} disabled={disabledInfo} purchasable={this.state.purchasable} modalController={this.modalController} />
             </Wrapper>
         );
     }
