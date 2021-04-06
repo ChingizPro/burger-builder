@@ -12,8 +12,8 @@ const OrderSummary = (props) => {
             <p>It contains the following ingredients:</p>
             <ul>{summary}</ul>
             <p>Continue to checkout ?!</p>
-            <Button clicked={props.cancelled}>Cancel</Button>
-            <Button clicked={props.confirmed}>Continue</Button>
+            <Button clicked={props.cancelled} type='Danger'>Cancel</Button>
+            <Button clicked={props.confirmed} type='Success'>Continue</Button>
         </Wrapper>
     );
 }
