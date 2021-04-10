@@ -1,0 +1,16 @@
+.SideDrawer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 60%;
+    max-width: 70%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 200;
+    padding: 45px 15px;
+}
+
+.SideDrawer > *:first-child {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
