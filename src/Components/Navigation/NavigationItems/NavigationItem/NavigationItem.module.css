@@ -17,7 +17,7 @@
     color: #40a4c8;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 501px) {
     .NavigationItem {
         height: 100%;
     }
@@ -25,6 +25,7 @@
     .NavigationItem a {
         height: 100%;
         display: flex;
+        justify-content: center;
         align-items: center;
         color: #fff;
         border-bottom: 4px solid transparent;
