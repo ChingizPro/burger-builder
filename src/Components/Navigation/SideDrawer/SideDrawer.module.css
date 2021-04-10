@@ -8,9 +8,18 @@
     background-color: #fff;
     z-index: 200;
     padding: 45px 15px;
+    transition: 0.3s transform ease-out;
 }
 
 .SideDrawer > *:first-child {
     margin-bottom: 20px;
     margin-left: 10px;
+}
+
+.Open {
+    transform: translateX(0);
+}
+
+.Close {
+    transform: translateX(-100%);
 }
