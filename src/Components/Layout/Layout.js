@@ -10,11 +10,19 @@ class Layout extends Component {
         showSideDrawer: false
     }
 
+    openSideDrawer = () => {
+        this.setState({ showSideDrawer: true });
+    }
+
+    closeSideDrawer = () => {
+        this.setState({ showSideDrawer: false });
+    }
+
     render() {
         return (
             <Wrapper>
-                <SideDrawer />
-                <Toolbar />
+                <SideDrawer open={this.state.showSideDrawer} backdropClick={this.closeSideDrawer} />
+                <Toolbar menuClick={this.openSideDrawer} />
                 <main className={classes.content}>
                     {this.props.children}
                 </main>
