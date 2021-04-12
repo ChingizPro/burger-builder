@@ -19,6 +19,7 @@
 
 @media (min-width: 501px) {
     .NavigationItem {
+        width: auto;
         height: 100%;
     }
 
@@ -27,6 +28,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
         color: #fff;
         border-bottom: 4px solid transparent;
     }
