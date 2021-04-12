@@ -4,6 +4,7 @@ import classes from './Toolbar.module.css';
 import Logo from '../../Logo/Logo';
 import NavigationItems from '../NavigationItems/NavigationItems';
 import MenuToggler from '../SideDrawer/MenuToggler/MenuToggler';
+import PropTypes from 'prop-types';
 
 const Toolbar = props => (
     <div className={classes.Toolbar}>
@@ -14,5 +15,9 @@ const Toolbar = props => (
         </nav>
     </div>
 );
+
+Toolbar.propTypes = {
+    menuClick: PropTypes.func
+}
 
 export default Toolbar;

@@ -5,6 +5,7 @@ import NavigationItems from '../NavigationItems/NavigationItems';
 import classes from './SideDrawer.module.css';
 import Backdrop from '../../UI/Backdrop/Backdrop';
 import Wrapper from '../../../hoc/Wrapper/Wrapper';
+import PropTypes from 'prop-types';
 
 const SideDrawer = props => {
     let attachedClasses = [classes.SideDrawer, classes.Close];
@@ -24,6 +25,11 @@ const SideDrawer = props => {
             </div>
         </Wrapper>
     );
+}
+
+SideDrawer.propTypes = {
+    open: PropTypes.bool,
+    backdropClick: PropTypes.func
 }
 
 export default SideDrawer;

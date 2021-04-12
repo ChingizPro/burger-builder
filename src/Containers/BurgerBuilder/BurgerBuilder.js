@@ -5,6 +5,7 @@ import Burger from '../../Components/Burger/Burger';
 import BuildControls from '../../Components/Burger/BuildControls/BuildControls';
 import Modal from '../../Components/UI/Modal/Modal';
 import OrderSummary from '../../Components/Burger/OrderSummary/OrderSummary';
+import PropTypes from 'prop-types';
 
 const INGREDIENT_PRICES = {
     salad: 0.4,
@@ -88,6 +89,20 @@ class BurgerBuilder extends Component {
             </Wrapper>
         );
     }
+}
+
+BurgerBuilder.propTypes = {
+    showModal: PropTypes.bool,
+    hideModal: PropTypes.func,
+    ingredients: PropTypes.object,
+    cancelled: PropTypes.func,
+    confirmed: PropTypes.func,
+    price: PropTypes.string,
+    added: PropTypes.func,
+    removed: PropTypes.func,
+    disabled: PropTypes.bool,
+    purchasable: PropTypes.bool,
+    modalController: PropTypes.func
 }
 
 export default BurgerBuilder;
