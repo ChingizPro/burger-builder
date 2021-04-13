@@ -23,7 +23,6 @@ const BuildControls = (props) => (
             return <BuildControl key={control.label} label={control.label} added={() => props.added(control.type)} removed={() => props.removed(control.type)} disabled={props.disabled[control.type]} />
         })}
         <button className={classes.OrderButton} onClick={props.modalController} disabled={!props.purchasable}>Order Now</button>
-        ai PNG Designed By 千图网 from <a href="https://pngtree.com/">Pngtree.com</a>
     </div>
 );
 

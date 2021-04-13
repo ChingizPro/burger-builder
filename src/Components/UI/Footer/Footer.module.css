@@ -1,0 +1,34 @@
+.Footer {
+    background-color: #743b06;
+    color: #fcb448;
+    padding: 10px 20px;
+    text-align: right;
+    font-size: 12px;
+}
+
+.Footer p {
+    margin: 8px;
+}
+
+.Footer a {
+    color: #3dc2f3;
+    text-decoration: none;
+}
+
+@media (max-width: 555px) {
+    .Footer {
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .Footer {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 310px) {
+    .Footer {
+        padding: 15px 10px;
+    }
+}

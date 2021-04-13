@@ -4,6 +4,7 @@ import Wrapper from '../../hoc/Wrapper/Wrapper'
 import Toolbar from '../Navigation/Toolbar/Toolbar';
 import classes from './Layout.module.css';
 import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
+import Footer from '../UI/Footer/Footer';
 
 class Layout extends Component {
     state = {
@@ -28,6 +29,7 @@ class Layout extends Component {
                 <main className={classes.content}>
                     {this.props.children}
                 </main>
+                <Footer />
             </Wrapper>
         )
     }
