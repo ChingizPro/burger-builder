@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-import Wrapper from '../../hoc/Wrapper/Wrapper'
-import Toolbar from '../Navigation/Toolbar/Toolbar';
+import Wrapper from '../Wrapper/Wrapper'
+import Toolbar from '../../Components/Navigation/Toolbar/Toolbar';
 import classes from './Layout.module.css';
-import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
-import Footer from '../UI/Footer/Footer';
+import SideDrawer from '../../Components/Navigation/SideDrawer/SideDrawer';
+import Footer from '../../Components/UI/Footer/Footer';
 
 class Layout extends Component {
     state = {
