@@ -8,11 +8,11 @@ const OrderSummary = props => {
 
     return (
         <Wrapper>
-            <h3>Here is your order</h3>
+            <h3 style={{ marginTop: '17px' }}>Here is your order</h3>
             <p>It contains the following ingredients:</p>
             <ul>{summary}</ul>
             <p><strong>Price: {props.price.toFixed(2)} $</strong></p>
-            <p>Continue to checkout ?!</p>
+            <p style={{ marginBottom: 0 }}>Continue to checkout ?!</p>
             <Button clicked={props.cancelled} type='Danger'>Cancel</Button>
             <Button clicked={props.confirmed} type='Success'>Continue</Button>
         </Wrapper>

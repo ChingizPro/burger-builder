@@ -8,3 +8,9 @@
 .Logo > img {
     height: 100%;
 }
+
+@media (max-width: 420px) {
+    .Logo {
+        padding: 4px;
+    }
+}

@@ -56,3 +56,38 @@
     background-color: #99703f;
     color: white;
 }
+
+@media (max-width: 501px) {
+    .Label {
+        font-size: 15px;
+        width: 70px;
+    }
+
+    .BuildControl button {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 330px) {
+    .Label {
+        font-size: 14px;
+        width: 65px;
+    }
+
+    .BuildControl button {
+        font-size: 14px;
+        width: 70px;
+    }
+}
+
+@media (max-width: 280px) {
+    .Label {
+        font-size: 13px;
+        width: 60px;
+    }
+
+    .BuildControl button {
+        font-size: 13px;
+        width: 65px;
+    }
+}

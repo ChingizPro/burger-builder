@@ -6,6 +6,7 @@
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px black;
     padding: 16px;
+    padding-bottom: 12px;
     left: 15%;
     top: 30%;
     box-sizing: border-box;
@@ -26,9 +27,31 @@
     }
 }
 
+@media (max-width: 420px) {
+    .Modal {
+        font-size: 15.5px;
+    }
+
+    .Modal h3 {
+        font-size: 16.5px;
+    }
+}
+
 @media (max-width: 400px) {
     .Modal {
         width: 90%;
         left: 5%;
+    }
+}
+
+@media (max-width: 330px) {
+    .Modal {
+        width: 95%;
+        left: 2.5%;
+        font-size: 14.5px;
+    }
+
+    .Modal h3 {
+        font-size: 16px;
     }
 }

@@ -16,7 +16,7 @@ const SideDrawer = props => {
 
     return (
         <Wrapper>
-            <Backdrop visible={props.open} click={props.backdropClick} />
+            <Backdrop visible={props.open} click={props.backdropClick} class='MenuClass' />
             <div className={attachedClasses.join(' ')}>
                 <Logo className={classes.abc} height='10%' />
                 <nav className={classes.nav}>

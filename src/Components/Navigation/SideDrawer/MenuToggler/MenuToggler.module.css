@@ -17,8 +17,16 @@
     border-radius: 5px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 501px) {
     .Toggler {
         display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    .Toggler {
+        align-items: flex-start;
+        padding: 11px 0;
+        padding-left: 4px;
     }
 }

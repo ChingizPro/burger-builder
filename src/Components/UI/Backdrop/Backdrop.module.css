@@ -9,3 +9,9 @@
     z-index: 100;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+@media (min-width: 501px) {
+    .MenuClass {
+        display: none;
+    }
+}

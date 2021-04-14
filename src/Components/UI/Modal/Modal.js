@@ -12,7 +12,7 @@ class Modal extends Component {
     render() {
         return (
             <Wrapper>
-                <Backdrop visible={this.props.showModal} click={this.props.hideModal} />
+                <Backdrop visible={this.props.showModal} click={this.props.hideModal} class='' />
                 <div className={classes.Modal} style={{ transform: this.props.showModal ? 'translateY(0vh)' : 'translateY(-100vh)' }}>
                     {this.props.children}
                 </div>

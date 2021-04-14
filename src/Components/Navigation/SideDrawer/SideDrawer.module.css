@@ -3,7 +3,6 @@
     left: 0;
     top: 0;
     width: 60%;
-    max-width: 70%;
     height: 100%;
     background-color: #fff;
     z-index: 200;
@@ -22,4 +21,40 @@
 
 .Close {
     transform: translateX(-100%);
+}
+
+@media (min-width: 501px) {
+    .SideDrawer {
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    .SideDrawer {
+        width: 65%;
+    }
+}
+
+@media (max-width: 370px) {
+    .SideDrawer {
+        width: 70%;
+    }
+}
+
+@media (max-width: 330px) {
+    .SideDrawer {
+        width: 72%;
+    }
+}
+
+@media (max-width: 300px) {
+    .SideDrawer {
+        width: 75%;
+    }
+}
+
+@media (max-width: 270px) {
+    .SideDrawer {
+        width: 80%;
+    }
 }

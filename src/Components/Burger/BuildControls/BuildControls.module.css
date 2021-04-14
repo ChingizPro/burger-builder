@@ -58,3 +58,35 @@
         transform: scale(1);
     }
 }
+
+@media (max-width: 501px) {
+    .Price {
+        font-size: 17px;
+    }
+
+    .OrderButton {
+        font-size: 0.95em;
+        padding: 6px 14px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 330px) {
+    .Price {
+        font-size: 16px;
+    }
+
+    .OrderButton {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 280px) {
+    .Price {
+        font-size: 15px;
+    }
+
+    .OrderButton {
+        font-size: 0.8em;
+    }
+}

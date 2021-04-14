@@ -40,9 +40,21 @@
     }
 }
 
+@media (max-width: 440px) {
+    .Burger-text {
+        font-size: 17px;
+    }
+}
+
 @media (max-width: 395px) {
     .Burger {
         height: 350px;
+    }
+}
+
+@media (max-width: 380px) {
+    .Burger-text {
+        font-size: 15px;
     }
 }
 
@@ -50,10 +62,30 @@
     .Burger {
         height: 300px;
     }
+
+    .Burger-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 320px) {
+    .Burger-text {
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 290px) {
     .Burger {
         height: 280px;
+    }
+
+    .Burger-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 260px) {
+    .Burger-text {
+        font-size: 11px;
     }
 }
